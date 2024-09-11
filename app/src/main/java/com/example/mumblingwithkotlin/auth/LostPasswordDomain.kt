@@ -6,25 +6,21 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.mumblingwithkotlin.templates.SubscribePage
+import com.example.mumblingwithkotlin.templates.LostPasswordPage
 
-class Subscribe: ComponentActivity() {
+class LostPasswordDomain: ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            SubscribePage()
+            LostPasswordPage()
         }
     }
 }
 
+
 @Preview(showBackground = true)
 @Composable
-fun SubscribePreview(){
-    SubscribePage()
+fun LostPasswordPreview(){
+    LostPasswordPage()
 }
-
-
-
-
-
