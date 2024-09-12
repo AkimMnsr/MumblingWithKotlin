@@ -18,7 +18,7 @@ class ConnectionDomain : ComponentActivity() {
             LoginPage({ nav(SubscribeDomain::class) }, { nav(LostPasswordDomain::class) })
         }
     }
-
+    
     private fun <T : Any> nav(page: KClass<T>) {
         val intent = Intent(this, page.java)
         startActivity(intent)

@@ -16,12 +16,11 @@
         android:theme="@style/Theme.MumblingWithKotlin"
         tools:targetApi="31">
 
-        <activity android:name=".article.ArticleDomain" />
         <activity android:name=".auth.SubscribeDomain" />
         <activity android:name=".auth.LostPasswordDomain" />
 
         <activity
-            android:name=".auth.ConnectionDomain"
+            android:name=".article.ArticleDomain"
             android:exported="true"
             android:theme="@style/Theme.MumblingWithKotlin">
             <intent-filter>
